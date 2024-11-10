@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexican Holidays</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffebcc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #c1272d;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeInDown 1s ease-in-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1000px;
+            width: 90%;
+            margin-top: 20px;
+        }
+        .festividad {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards ease-in-out;
+            animation-delay: calc(0.3s * var(--index));
+        }
+        .festividad h2 {
+            color: #c1272d;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .festividad img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            transition: transform 0.5s ease;
+        }
+        .festividad img:hover {
+            transform: scale(1.05);
+        }
+        .festividad p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: center;
+            margin: 0 10px;
+        }
+        footer {
+            background-color: #c1272d;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mexican Holidays</h1>
+        <p>A celebration of our traditions and culture</p>
+    </header>
+
+    <div class="container">
+
+        <div class="festividad" style="--index: 1;">
+            <h2>Day of the Dead</h2>
+            <p>The Day of the Dead, celebrated on November 1 and 2, is one of the most significant and colorful traditions in Mexico. Its origins date back to pre-Hispanic times, when the Mexica, Maya, Purépecha and Totonac cultures already practiced rituals to honor the deceased. During this celebration, it is believed that the souls of loved ones return to the world of the living to live with their families and enjoy the offerings prepared especially for them.</p>
+            <td><img src="Day of the Dead Altar.jpeg" width="400" height="400"></td>
+        </div>
+
+        <div class="festividad" style="--index: 2;">
+            <h2>Grito de Independencia</h2>
+            <p>September 15 and 16 - The Grito de Independencia is the symbol of the birth of a free and sovereign nation, and every year is a date of pride and reflection on the sacrifice and bravery of those who fought for Mexico's independence.</p>
+            <td><img src="grito de independencia.jpeg" width="400" height="400"></td>
+        </div>
+
+        <div class="festividad" style="--index: 3;">
+            <h2>Day of the Virgin of Guadalupe</h2>
+            <p>December 12 - The Day of the Virgin of Guadalupe is not only a religious date, but also has a strong cultural and social component. It is a manifestation of the popular Mexican faith, united by a common feeling of devotion and gratitude to the Virgin. Throughout the centuries, the figure of the Virgin has been a symbol of protection, hope and unity.</p>
+            <td><img src="Day of the Virgin of Guadalupe.jpeg" width="500" height="400"></td>
+        </div>
+
+        <div class="festividad" style="--index: 4;">
+            <h2>Christmas in Mexico</h2>
+            <p>December 25 - Christmas in Mexico is a time full of traditions and family celebrations. Nativity scenes representing the birth of Jesus are placed in homes, and families gather to share Christmas dinner. Typical dishes include tamales, cod, and ponche. Posadas, which begin on December 16, recreate the journey of Mary and Joseph in search of lodging before the birth of Jesus. These include songs, piñatas, and lights, symbolizing unity and hope during the Christmas season.</p>
+            <td><img src="Navidad.jpeg.jpeg" width="500" height="400"></td>
+        </div>
+
+        <div class="festividad" style="--index: 5;">
+            <h2>Mexican Revolution</h2>
+            <p>November 20 - The Mexican Revolution marked a key historical moment for Mexico. Begun in 1910, this struggle sought to end more than 30 years of dictatorship by Porfirio Díaz and to confront the deep social and economic inequalities of the time. Important figures such as Francisco I. Madero, Emiliano Zapata and Pancho Villa played a fundamental role in the movement. The revolution brought about significant changes, including a new constitution in 1917 that established labor, agrarian and educational rights, and sought to guarantee social justice for the Mexican people.</p>
+            <td><img src="Revolucion Mexicana.jpeg" width="500" height="400"></td>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mexican Holidays - Proud of our traditions</p>
+    </footer>
+
+</body>
+</html>
